@@ -20,11 +20,16 @@ p {
 }
 header{
     width: 90%;
+    height: auto;
     margin: auto;
     display: flex;
     justify-content: center;
     flex-direction: row;
     margin-top: 28px;
+}
+header .logo {
+    width: 240px;
+    height: min-content;
 }
 header button {
     border: 2px solid hsl(321, 100%, 78%);
@@ -33,6 +38,11 @@ header button {
     padding: 8px 16px;
     border-radius: 24px;
     margin-left: auto;
+    min-width: 100px;
+}
+header button:active, header button:hover {
+    color: hsl(0, 100%, 63%);
+    border: 2px solid hsl(0, 100%, 63%);
 }
 .hero-text {
     display: flex;
@@ -57,6 +67,9 @@ header button {
     padding: 15px;
     margin: 20px auto;
     box-shadow: 0px 3px 8px 0px #aaa;
+}
+.hero-text button:hover, .hero-text button:active {
+    background-color: hsl(321, 100%, 78%);
 }
 .mockup {
     display: flex;
@@ -133,6 +146,9 @@ main div:nth-child(6), main div:nth-child(12){
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
 }
+.cta-button:active, .cta-button:hover {
+    background-color: hsl(321, 100%, 78%);
+}
 .footer-image {
     width: 100%;
     margin-bottom: -5px;
@@ -178,6 +194,9 @@ form button {
     background-color: hsl(322, 100%, 66%);
     color: white;
     margin-left: 10px;
+}
+form button:hover, form button:active {
+    background-color: hsl(321, 100%, 78%);
 }
 .contact-options img {
     margin: -5px 10px;
